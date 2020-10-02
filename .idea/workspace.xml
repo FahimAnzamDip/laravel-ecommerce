@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f24b346e-5913-4a25-bd71-9952e50fc208" name="Default Changelist" comment="" />
+    <list default="true" id="f24b346e-5913-4a25-bd71-9952e50fc208" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/SettingsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/OrdersController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
@@ -222,7 +233,10 @@
       <workItem from="1600698928201" duration="6634000" />
       <workItem from="1601045478968" duration="8397000" />
       <workItem from="1601275240072" duration="22860000" />
-      <workItem from="1601362489066" duration="14842000" />
+      <workItem from="1601362489066" duration="17862000" />
+      <workItem from="1601455057735" duration="266000" />
+      <workItem from="1601455364834" duration="722000" />
+      <workItem from="1601563663822" duration="4479000" />
     </task>
     <servers />
   </component>

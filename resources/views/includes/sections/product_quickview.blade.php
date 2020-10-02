@@ -81,22 +81,28 @@
                                             </ul>
                                         </div>
                                         <!-- Product Price Description End -->
-                                        <!-- Product Box Quantity Start -->
-                                        <div class="box-quantity mtb-20">
-                                            <div class="quantity-item">
-                                                <label>Qty: </label>
-                                                <div class="cart-plus-minus">
-                                                    <input class="cart-plus-minus-box" type="text" name="qty" value="1">
+                                        <form action="{{ route('add.cart.post') }}" method="POST">
+                                        @csrf
+                                            <!-- Product Box Quantity Start -->
+                                            <div class="box-quantity mtb-20">
+                                                <div class="quantity-item">
+                                                    <label>Qty: </label>
+                                                    <div class="cart-plus-minus">
+                                                        <input class="cart-plus-minus-box" type="text" name="quantity" value="1">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!-- Product Box Quantity End -->
-                                        <!-- Product Button Actions Start -->
-                                        <div class="product-button-actions">
-                                            <button class="add-to-cart addcart" data-id="">add to cart</button>
-                                            <a href="javascript:" data-toggle="tooltip" data-id="" title="Add to Wishlist" class="same-btn mr-15 addwishlist"><i class="pe-7s-like"></i></a>
-                                        </div>
-                                        <!-- Product Button Actions End -->
+                                            <!-- Product Box Quantity End -->
+                                            <input type="hidden" value="{{ $product->id }}" name="id">
+                                            <!-- Product Button Actions Start -->
+                                            <div class="product-button-actions">
+                                                <button class="add-to-cart" type="submit">add to cart</button>
+                                                <a href="javascript:" data-toggle="tooltip" title="Add to Wishlist"
+                                                   class="same-btn mr-15 addwishlist" data-id="{{ $product->id }}"><i
+                                                        class="pe-7s-like"></i></a>
+                                            </div>
+                                            <!-- Product Button Actions End -->
+                                        </form>
                                     </div>
                                 </div>
                                 <!-- Thumbnail Description End -->

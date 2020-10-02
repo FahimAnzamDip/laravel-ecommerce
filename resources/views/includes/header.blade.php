@@ -95,105 +95,42 @@
             <div class="mobile-menu visible-sm visible-xs">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a>
-                            <!-- Mobile Menu Dropdown Start -->
-                            <ul>
-                                <li><a href="index.html">Home Version 1</a></li>
-                                <li><a href="home-2.html">Home Version 2</a></li>
-                                <li><a href="home-3.html">Home Version 3</a></li>
-                                <li><a href="home-4.html">Home Version 4</a></li>
-                            </ul>
-                            <!-- Mobile Menu Dropdown End -->
+                        <li>
+                            <a href="{{ route('home.page') }}">Home</a>
                         </li>
-                        <li><a href="#">Furniture</a>
-                            <!-- Mobile Menu Dropdown Start -->
+
+                        <li><a href="#">Categories</a>
+                            <!-- Mega Menu Start -->
                             <ul>
-                                <li><a href="#">sofas & loveseats</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">convallis neceros</a></li>
-                                        <li><a href="categorie-page.html">Outdoor Rugs</a></li>
-                                        <li><a href="categorie-page.html">Mice and Trackballs</a></li>
-                                        <li><a href="categorie-page.html">Cameras</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
-                                <li><a href="#">chairs & recliners</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">commodo nunc</a></li>
-                                        <li><a href="categorie-page.html">dignissim porta</a></li>
-                                        <li><a href="categorie-page.html">necvelit dignissim</a></li>
-                                        <li><a href="categorie-page.html">venenatis lacinia</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
+                                <!-- Single Mega Sub Menu Start -->
+                                @foreach(\App\Category::all() as $category)
+                                    <li>
+                                        <a href="{{ route('shop.page', ['category_id' => $category->id]) }}"><h3 class="mt-5">{{ $category->category_name }}</h3></a>
+                                        @if($category->subCategories)
+                                            <ul>
+                                                @foreach($category->subCategories as $subCategory)
+                                                    <li>
+                                                        <a href="{{ route('shop.page', ['sub_category_id' => $subCategory->id]) }}">{{ $subCategory->sub_category_name }}</a>
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </li>
+                            @endforeach
+                            <!-- Single Mega Sub Menu Start -->
                             </ul>
-                            <!-- Mobile Menu Dropdown End -->
+                            <!-- Mega Menu End -->
                         </li>
-                        <li><a href="#">decor</a>
-                            <!-- Mobile Menu Dropdown Start -->
-                            <ul>
-                                <li><a href="#">art gallery</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">congue nonorna</a></li>
-                                        <li><a href="categorie-page.html">Etiam sapien</a></li>
-                                        <li><a href="categorie-page.html">Outdoor Lighting</a></li>
-                                        <li><a href="categorie-page.html">sapien enim</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
-                                <li><a href="#">lighting</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">commodo nunc</a></li>
-                                        <li><a href="categorie-page.html">elementum dolor</a></li>
-                                        <li><a href="categorie-page.html">ligula velvenen</a></li>
-                                        <li><a href="categorie-page.html">Vestibulum tempor</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
-                                <li><a href="#">rugs</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">blandit vehicula</a></li>
-                                        <li><a href="categorie-page.html">Praesent molestie</a></li>
-                                        <li><a href="categorie-page.html">sagittis ipsum</a></li>
-                                        <li><a href="categorie-page.html">venenatis innunc</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
-                                <li><a href="#">throw pillows</a>
-                                    <!-- Mobile Menu Sub-Dropdown Start -->
-                                    <ul>
-                                        <li><a href="categorie-page.html">Fire Pits</a></li>
-                                        <li><a href="categorie-page.html">Garden Accents</a></li>
-                                        <li><a href="categorie-page.html">Outdoor Fountains</a></li>
-                                        <li><a href="categorie-page.html">Patio Heaters</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Sub-Dropdown End -->
-                                </li>
-                            </ul>
-                            <!-- Mobile Menu Dropdown End -->
+
+                        <li>
+                            <a href="{{ route('shop.page') }}">Shop</a>
                         </li>
-                        <li><a href="#">pages</a>
-                            <!-- Home Version Dropdown Start -->
-                            <ul>
-                                <li><a href="categorie-page.html">shop</a></li>
-                                <li><a href="product-page.html">Product Details</a></li>
-                                <li><a href="cart.html">cart</a></li>
-                                <li><a href="checkout.html">checkout</a></li>
-                                <li><a href="wish-list.html">wish list</a></li>
-                                <li><a href="blog.html">blog</a></li>
-                                <li><a href="blog-details.html">blog details</a></li>
-                                <li><a href="contact.html">contact</a></li>
-                                <li><a href="privacy.html">Privacy Policy</a></li>
-                                <li><a href="404.html">404</a></li>
-                            </ul>
-                            <!-- Home Version Dropdown End -->
+
+                        <li><a href="{{ route('about.page') }}">About us</a></li>
+
+                        <li>
+                            <a href="{{ route('contact.page') }}">Contact</a>
                         </li>
-                        <li><a href="about-us.html">about us</a></li>
                     </ul>
                 </nav>
             </div>

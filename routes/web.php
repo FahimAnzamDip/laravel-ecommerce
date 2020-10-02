@@ -28,6 +28,7 @@ Route::get('/wishlist/{id}/add/cart', 'WishlistsController@addToCart')->name('wi
 
 //User Cart Routes
 Route::get('/add/to/cart/{id}', 'CartsController@addToCart')->name('add.cart');
+Route::post('/add/to/cart', 'CartsController@addToCartPost')->name('add.cart.post');
 Route::get('/show/cart', 'CartsController@showCart')->name('show.cart');
 Route::get('/cart/{rowId}/remove', 'CartsController@removeCart')->name('cart.remove');
 Route::post('/cart/update', 'CartsController@updateCart')->name('cart.update');

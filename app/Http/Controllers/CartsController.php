@@ -40,6 +40,39 @@ class CartsController extends Controller
         return \Response::json(['success' => 'Added To Cart!']);
     }
 
+    public function addToCartPost(Request $request) {
+        $product = Product::find($request->id);
+
+        if ($product->product_quantity > 0 && $request->quantity < $product->product_quantity ) {
+            if ($product->discounted_price === null) {
+                Cart::add([
+                    'id' => $product->id,
+                    'name' => $product->product_name,
+                    'qty' => $request->quantity,
+                    'price' => $product->selling_price,
+                    'weight' => 1,
+                    'options' => ['product_image' => $product->image_one]
+                ]);
+            } else if ($product->discounted_price) {
+                Cart::add([
+                    'id' => $product->id,
+                    'name' => $product->product_name,
+                    'qty' => $request->quantity,
+                    'price' => $product->discounted_price,
+                    'weight' => 1,
+                    'options' => ['product_image' => $product->image_one]
+                ]);
+            }
+        } else {
+            toast('Product Is Out Of Stock!', 'error');
+
+            return back();
+        }
+        toast('Added To Cart!', 'success');
+
+        return back();
+    }
+
     public function showCart() {
         $products = Cart::content();
 
