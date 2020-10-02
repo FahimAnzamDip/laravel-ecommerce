@@ -72,6 +72,8 @@ Route::namespace('Admin')->group(function () {
     Route::get('/admin/brand/{id}/edit', 'BrandsController@edit')->name('brand.edit');
     Route::post('/admin/brand/{id}/update', 'BrandsController@update')->name('brand.update');
     Route::get('/admin/brand/{id}/delete', 'BrandsController@delete')->name('brand.delete');
+    //Users
+    Route::get('/admin/users', 'UsersController@index')->name('admin.users');
     //Coupons
     Route::get('/admin/coupons', 'CouponsController@index')->name('coupon.index');
     Route::post('/admin/coupon/store', 'CouponsController@store')->name('coupon.store');

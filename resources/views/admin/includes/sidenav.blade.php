@@ -30,6 +30,13 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="{{ route('admin.users') }}">
+                            <i class="fa fas fa-users text-green"></i>
+                            <span class="nav-link-text">Users</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="#navbar-category" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                             <i class="fa fas fa-list text-orange"></i>
                             <span class="nav-link-text">Category</span>
