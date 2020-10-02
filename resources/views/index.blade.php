@@ -166,7 +166,7 @@
                         <div class="single-banner zoom mb-30">
                             <img src="{{ asset('uploads/category_images') . '/' . $category->category_image }}" alt="product-banner">
                             <div class="banner-desc">
-                                <a href="">{{ $category->category_name }}</a>
+                                <a href="{{ route('shop.page', ['category_id' => $category->id]) }}">{{ $category->category_name }}</a>
                                 <p>{{ count(\App\Product::where('category_id', $category->id)->get()) }} Products</p>
                             </div>
                         </div>
