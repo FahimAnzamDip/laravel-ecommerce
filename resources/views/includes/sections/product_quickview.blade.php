@@ -93,12 +93,12 @@
                                                 </div>
                                             </div>
                                             <!-- Product Box Quantity End -->
-                                            <input type="hidden" value="{{ $product->id }}" name="id">
+                                            <input type="hidden" value="{{ $product->id ?? '' }}" name="id">
                                             <!-- Product Button Actions Start -->
                                             <div class="product-button-actions">
                                                 <button class="add-to-cart" type="submit">add to cart</button>
                                                 <a href="javascript:" data-toggle="tooltip" title="Add to Wishlist"
-                                                   class="same-btn mr-15 addwishlist" data-id="{{ $product->id }}"><i
+                                                   class="same-btn mr-15 addwishlist" data-id="{{ $product->id ?? ''}}"><i
                                                         class="pe-7s-like"></i></a>
                                             </div>
                                             <!-- Product Button Actions End -->
