@@ -122,27 +122,7 @@
                         </form>
                         <!-- Product Social Link Share Start -->
                         <div class="social-shared">
-                            <ul>
-                                <li class="f-book">
-                                    <a href="#">
-                                        <span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
-                                        <span>like</span>
-                                        <span>1</span>
-                                    </a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#">
-                                        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                                        <span>tweet</span>
-                                    </a>
-                                </li>
-                                <li class="pinterest">
-                                    <a href="#">
-                                        <span><i class="fa fa-google" aria-hidden="true"></i></span>
-                                        <span>plus</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="addthis_inline_share_toolbox"></div>
                         </div>
                         <!-- Product Social Link Share End -->
                     </div>

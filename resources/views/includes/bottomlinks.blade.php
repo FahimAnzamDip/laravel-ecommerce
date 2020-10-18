@@ -19,6 +19,8 @@
 <!-- plugins -->
 <script src="{{ asset('frontend_assets') }}/js/plugins.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+<!-- www.addthis.com -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f8c896b1c1f1e22"></script>
 <!-- main js -->
 <script src="{{ asset('frontend_assets') }}/js/main.js"></script>
 

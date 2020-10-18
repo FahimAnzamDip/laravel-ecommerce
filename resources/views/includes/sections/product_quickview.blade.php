@@ -103,6 +103,11 @@
                                             </div>
                                             <!-- Product Button Actions End -->
                                         </form>
+                                        <!-- Product Social Link Share Start -->
+                                        <div class="social-shared">
+                                            <div class="addthis_inline_share_toolbox"></div>
+                                        </div>
+                                        <!-- Product Social Link Share End -->
                                     </div>
                                 </div>
                                 <!-- Thumbnail Description End -->

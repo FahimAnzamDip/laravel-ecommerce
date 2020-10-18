@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f24b346e-5913-4a25-bd71-9952e50fc208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/bottomlinks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/bottomlinks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +238,8 @@
       <workItem from="1601455364834" duration="722000" />
       <workItem from="1601563663822" duration="5961000" />
       <workItem from="1601637317579" duration="1801000" />
-      <workItem from="1601659917297" duration="2446000" />
+      <workItem from="1601659917297" duration="2526000" />
+      <workItem from="1603045351129" duration="1358000" />
     </task>
     <servers />
   </component>
@@ -244,6 +247,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603045385342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.728@0.0.1366.728" timestamp="1603045385342" />
     <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598973343170">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
