@@ -70,7 +70,12 @@ class PagesController extends Controller
     }
 
     public function search(Request $request) {
+        $request->validate([
+            'query' => 'required|min:3'
+        ]);
+
         $query = $request->get('query');
+
         $products = Product::where('product_name', 'like', "%$query%")
                             ->orWhere('product_details', 'like', "%$query%")
                             ->paginate(9);
