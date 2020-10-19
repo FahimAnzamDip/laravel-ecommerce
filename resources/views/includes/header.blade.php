@@ -29,10 +29,10 @@
                         <li class="hidden-control"><i class="pe-7s-search"></i>
                             <ul class="search-form ht-dropdown">
                                 <li>
-                                    <form action="#">
-                                        <input type="text" class="search" name="search" placeholder="Search for products...">
+                                    <form id="search" action="{{ route('product.search') }}" method="GET">
+                                        <input type="text" class="search" name="query" placeholder="Search for products..." value="{{ request()->input('query') }}">
                                     </form>
-                                    <i class="pe-7s-search"></i>
+                                    <i onclick="document.getElementById('search').submit();" class="pe-7s-search"></i>
                                 </li>
                             </ul>
                         </li>

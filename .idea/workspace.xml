@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f24b346e-5913-4a25-bd71-9952e50fc208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/bottomlinks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/bottomlinks.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,6 @@
     <setting file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/includes/footer.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/pages/checkout.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/admin/includes/sidenav.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/admin/includes/topnav.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -39,9 +38,12 @@
     <setting file="file://$PROJECT_DIR$/resources/views/includes/sections/nav.blade.php" root0="SKIP_INSPECTION" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/pages/cart.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/pages/product/productdetails.blade.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/includes/sections/product_quickview.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/public/frontend_assets/css/style.css" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resources/views/pages/search.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/CartsController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/includes/bottomlinks.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/SliderController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/resources/views/pages/about.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php" root0="SKIP_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resources/views/admin/pages/category/categories/index.blade.php" root0="SKIP_INSPECTION" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -239,7 +241,8 @@
       <workItem from="1601563663822" duration="5961000" />
       <workItem from="1601637317579" duration="1801000" />
       <workItem from="1601659917297" duration="2526000" />
-      <workItem from="1603045351129" duration="1358000" />
+      <workItem from="1603045351129" duration="1751000" />
+      <workItem from="1603092471012" duration="2146000" />
     </task>
     <servers />
   </component>

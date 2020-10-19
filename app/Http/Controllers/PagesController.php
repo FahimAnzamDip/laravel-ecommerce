@@ -68,4 +68,13 @@ class PagesController extends Controller
 
         return response()->json($product);
     }
+
+    public function search(Request $request) {
+        $query = $request->get('query');
+        $products = Product::where('product_name', 'like', "%$query%")
+                            ->orWhere('product_details', 'like', "%$query%")
+                            ->paginate(9);
+
+        return view('pages.search', compact('products'));
+    }
 }

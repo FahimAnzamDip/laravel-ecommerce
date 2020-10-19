@@ -10,6 +10,7 @@ Route::get('/shop', 'PagesController@shop')->name('shop.page');
 Route::get('/about', 'PagesController@about')->name('about.page');
 Route::get('/contact', 'PagesController@contact')->name('contact.page');
 Route::get('/product/view/{id}', 'PagesController@productView')->name('product.quick.view');
+Route::get('/search', 'PagesController@search')->name('product.search');
 
 //User Auth Routes
 Auth::routes(['verify' => true]);
